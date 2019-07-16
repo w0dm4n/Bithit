@@ -1,0 +1,49 @@
+{
+  "name": "bithit-engine",
+  "version": "1.0.0",
+  "description": "Bithit Engine",
+  "main": "index.ts",
+  "scripts": {
+    "start": "npm run build && npm run node",
+    "build": "npm run tsc",
+    "tsc": "tsc --build tsconfig.json",
+    "node": "node dist/index.js",
+    "tslint": "tslint -c tslint.json 'src/**/*.ts'",
+    "test": "jest --forceExit --coverage --verbose --detectOpenHandles"
+  },
+  "author": "Wodman",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^23.3.2",
+    "@types/node": "^10.10.0",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.1.4",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "@types/redis": "^2.8.6",
+    "@types/socket.io": "^1.4.38",
+    "body-parser": "^1.18.3",
+    "colors": "^1.3.2",
+    "config-decorators": "^0.1.4",
+    "cors": "^2.8.4",
+    "crypto": "^1.0.1",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.4",
+    "https": "^1.0.0",
+    "inversify": "^4.13.0",
+    "mysql2": "^1.6.1",
+    "raven": "^2.6.4",
+    "redis": "^2.8.0",
+    "reflect-metadata": "^0.1.12",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "seedrandom": "^2.4.4",
+    "sequelize": "^4.41.0",
+    "sequelize-typescript": "^0.6.6",
+    "socket.io": "^2.1.1",
+    "winston": "^3.1.0"
+  }
+}

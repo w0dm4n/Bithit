@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"emitDecoratorMetadata": true,
+		"module": "commonjs",
+		"target": "es2017",
+		"outDir": "dist",
+		"rootDir": "src",
+		"strictNullChecks": true,
+		"experimentalDecorators": true,
+		"types": ["reflect-metadata"],
+	},
+	"exclude": ["node_modules/", "__tests__/"]
+}
